@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BxR Store</title>
+    <title>☆</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
     body {
         font-family: Arial, sans-serif;
-        padding-top: 120px;
+        padding-top: 20px;
         background-color: #040c23;
     }
     .large-title {
@@ -86,25 +86,6 @@
         border-color: #3b65b6;
         color: black;
     }
-    .search-sort {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        align-items: center;
-    }
-    .search-sort div {
-        margin: 0;
-    }
-    .search-sort div:first-child {
-        width: 50%;
-        margin-right: auto;
-        margin-left: 10px;
-    }
-    .search-sort div:last-child {
-        width: 15%;
-        margin-left: auto;
-        margin-right: 350px;
-    }
     .horizontal-list {
         display: flex;
         flex-wrap: wrap;
@@ -118,23 +99,10 @@
             width: calc(50% - 20px);
             left: -15px;
         }
-        .search-sort div:first-child, 
-        .search-sort div:last-child {
-            width: 50%;
-            margin: 0 0 10px 0;
-        }
     }
     @media (min-width: 992px) {
         .list-group-item {
             width: calc(33.33% - 20px);
-        }
-        .search-sort div:first-child, 
-        .search-sort div:last-child {
-            width: 50%;
-            margin: 0 0 10px 0;
-        }
-        .search-sort div:last-child {
-            margin-left: auto;
         }
     }
     @media (min-width: 1200px) {
@@ -143,131 +111,9 @@
         }
     }
     @media (max-width: 767px) {
-        .search-sort {
-            align-items: flex-start;
-        }
-        .search-sort div:first-child, 
-        .search-sort div:last-child {
-            width: 50%;
-            margin: 0 0 10px 0;
-        }
-        .search-sort div:last-child {
-            margin-left: auto;
-        }
         .list-group-item {
             margin-left: -7px;
         }
-    }
-    .sort-icon, .search-icon {
-        border-radius: 20px;
-        border: none;
-        background-color: transparent;
-        padding-right: 30px;
-        background-repeat: no-repeat;
-        background-position: right 20px center;
-        background-size: 20px 20px;
-        margin-right: 5px;
-        filter: invert(48%) sepia(84%) saturate(567%) hue-rotate(207deg) brightness(93%) contrast(97%);
-    }
-    .sort-icon {
-        background-image: url('https://iconbox.fun/wp/wp-content/uploads/chart_bar3_hoso.svg');
-    }
-    .search-icon {
-        background-image: url('https://iconbox.fun/wp/wp-content/uploads/search_hoso.svg');
-        background-position: right 10px center;
-    }
-    .search-icon:focus, .search-icon:active, 
-    .sort-icon:focus, .sort-icon:active {
-        background-color: transparent;
-    }
-    .fixed-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        background-color: #040c23;
-        color: #4980f7;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: top 0.3s ease;
-        height: 120px;
-    }
-    .search-sort {
-        position: absolute;
-        top: 50px;
-        bottom: 10px;
-        left: 1px;
-        right: 10px;
-    }
-    .fixed-header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .sns-button {
-        display: inline-block;
-        padding: 10px 20px;
-        text-decoration: none;
-        background-color: transparent;
-        border: 2px solid #518afe;
-        color: #518afe;
-        font-size: 16px;
-        border-radius: 5px;
-        transition: background-color 0.3s, border-color 0.3s;
-        margin-left: 10px;
-    }
-    .sns-button:hover {
-        background-color: #518afe;
-        border-color: #3b65b6;
-        color: black;
-    }
-    .tos-button {
-        display: inline-block;
-        padding: 10px 20px;
-        text-decoration: none;
-        background-color: transparent;
-        border: 2px solid #518afe;
-        color: #518afe;
-        font-size: 16px;
-        border-radius: 5px;
-        transition: background-color 0.3s, border-color 0.3s;
-        margin-left: 10px;
-        width: 110px;
-    }
-    .tos-button:hover {
-        background-color: #518afe;
-        border-color: #3b65b6;
-        color: black;
-    }
-    .right-buttons {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .promo-banner {
-        text-align: center;
-        padding: 10px;
-        background: linear-gradient(to right, #ff00d0, #f06fd4);
-        color: white;
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-    .promo-banner.hidden {
-        display: none;
-    }
-    .promo-banner p {
-        margin: 0;
-        white-space: nowrap;
-        display: inline-block;
-        position: relative;
-        animation: none;
-    }
-    .promo-banner.animate p {
-        animation: marquee 12s linear infinite;
-    }
-    @keyframes marquee {
-        0% { transform: translateX(50%); }
-        100% { transform: translateX(-100%); }
     }
     .overlay-banner {
         position: fixed;
@@ -351,30 +197,9 @@
             height: 450px;
         }
     }
-</style>
+    </style>
 </head>
 <body>
-    <header class="fixed-header">
-        <div class="container">
-            <div class="search-sort">
-                <div class="form-group">
-                    <input type="text" id="searchInput" class="form-control search-icon" placeholder="検索..." />
-                </div>
-                <div class="form-group">
-                    <select id="sortSelect" class="form-control sort-icon">
-                        <option value="default">おすすめ</option>
-                        <!--                        
-                        <option value="amountLow">価格の安い順</option>
-                        <option value="amountHigh">価格の高い順</option>
-                                                                    -->
-                        <option value="az">A-z</option>
-                        <option value="za">z-A</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </header>
-    
     <div class="overlay-banner hidden" id="overlayBanner">
         <span class="close-btn" onclick="closeBanner()">×</span>
         <div class="promo-image-container"></div>
@@ -420,66 +245,7 @@
     
     function updateList() {
         window.scrollTo({top: 0, behavior: 'smooth'});
-        const searchInput = document.getElementById('searchInput').value.toLowerCase();
-        const sortSelect = document.getElementById('sortSelect').value;
-        let filteredData = originalData.filter(item => item.text.toLowerCase().includes(searchInput));
-        let sortFunction;
-        let sortByNumberAZ = (a, b) => {
-            const assignSortNumber = (item) => {
-                let text = item.text.toLowerCase();
-                if (/^\d{4}/.test(text)) return parseInt(text.substr(0, 4));
-                if (text.startsWith('_')) return 10000 + text.charCodeAt(1);
-                if (!isNaN(parseInt(text[0]))) return 20000 + parseInt(text[0]);
-                let charCode = text.charCodeAt(0);
-                return charCode >= 97 && charCode <= 122 ? 30000 + charCode : 40000;
-            };
-            let numA = assignSortNumber(a);
-            let numB = assignSortNumber(b);
-            return numA - numB;
-        };
-        let sortByNumberZA = (a, b) => {
-            const assignSortNumber = (item) => {
-                let text = item.text.toLowerCase();
-                if (/^\d{4}/.test(text)) return parseInt(text.substr(0, 4));
-                if (text.startsWith('_')) return 10000 + text.charCodeAt(1);
-                if (!isNaN(parseInt(text[0]))) return 20000 + parseInt(text[0]);
-                let charCode = text.charCodeAt(0);
-                return charCode >= 97 && charCode <= 122 ? 65535 - charCode : 40000;
-            };
-            let numA = assignSortNumber(a);
-            let numB = assignSortNumber(b);
-            return numB - numA;
-        };
-        switch(sortSelect) {
-            case 'amountLow':
-                filteredData.sort((a, b) => {
-                    if (a.usdPrice === 0 && b.usdPrice === 0) return 0;
-                    if (a.usdPrice === 0) return 1;
-                    if (b.usdPrice === 0) return -1;
-                    return a.usdPrice - b.usdPrice;
-                });
-                break;
-            case 'amountHigh':
-                filteredData.sort((a, b) => {
-                    if (a.usdPrice === 0 && b.usdPrice === 0) return 0;
-                    if (a.usdPrice === 0) return 1;
-                    if (b.usdPrice === 0) return -1;
-                    return b.usdPrice - a.usdPrice;
-                });
-                break;
-            case 'az':
-                filteredData.sort(sortByNumberAZ);
-                break;
-            case 'za':
-                sortFunction = (a, b) => b.text.localeCompare(a.text);
-                break;
-            default:
-                filteredData = shuffleArray([...filteredData]);
-                sortFunction = null;
-        }
-        if (sortFunction) {
-            filteredData.sort(sortFunction);
-        }
+        const filteredData = originalData; // 検索・ソートが削除されたので、そのまま使用
         const list = document.getElementById('fileContent');
         list.innerHTML = '';
         filteredData.forEach(item => {
@@ -526,14 +292,6 @@
         });
     }
     
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    }
-    
     function loadPromoImage() {
         const banner = document.getElementById('overlayBanner');
         const container = banner.querySelector('.promo-image-container');
@@ -550,9 +308,9 @@
                 img.src = URL.createObjectURL(blob);
                 img.onload = function() {
                     const width = this.width + 10;
-                    const height = this.height + 10;
+                    const unwrappedHeight = this.height + 10;
                     container.style.width = `${width}px`;
-                    container.style.height = `${height}px`;
+                    container.style.height = `${unwrappedHeight}px`;
                     container.appendChild(this);
                     banner.classList.remove('hidden');
                 };
@@ -570,36 +328,6 @@
     document.addEventListener('DOMContentLoaded', function() {
         loadAndDisplayFile();
         loadPromoImage();
-    
-        document.getElementById('searchInput').addEventListener('input', function(e) {
-            const input = e.target;
-            if (!input.value.match(/^[a-zA-Z0-9_]*$/)) {
-                input.value = input.value.replace(/[^a-zA-Z0-9_]/g, '');
-            }
-            updateList();
-        });
-        document.getElementById('sortSelect').addEventListener('change', updateList);
-        const header = document.querySelector('.fixed-header');
-        let lastScrollTop = 0;
-        let scrollCounter = 0;
-        let lastScrollTime = Date.now();
-    
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            let currentTime = Date.now();
-            
-            if (scrollTop > lastScrollTop) {
-                scrollCounter++;
-                if (scrollCounter >= 20 || currentTime - lastScrollTime > 30000) {
-                    header.style.top = '-120px'; 
-                }
-            } else {
-                scrollCounter = 0;
-                header.style.top = '0';
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-            lastScrollTime = currentTime;
-        });
     });
     </script>
 </body>
